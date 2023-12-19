@@ -21,6 +21,11 @@ fn main() {
     };
     println!("The value of y1 is: {y1}");
 
+    let x0 = five();
+    println!("The value of x0 is: {x0}");
+
+    let x1 = plus_one(5);
+    println!("the value of x2 is: {x1}");
 }
 
 fn another_function() {
@@ -33,4 +38,14 @@ fn another_function2(x: i32) {
 
 fn print_labeled_measurement(value: i32, unit_label: char) {
     println!("The measurement is: {value}{unit_label}");
+}
+
+fn five() -> i32 {
+    5
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
+    // x + 1; will not compile because the semicolon will make 
+    // it a statement which does not return a value
 }
