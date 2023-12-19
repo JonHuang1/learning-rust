@@ -7,7 +7,7 @@ fn main() {
 
     print_labeled_measurement(5, 'h');
 
-    let y0 = 6;
+    let _y0 = 6;
 
     /*
      This will cause error because "let y = 6" does not return a value
