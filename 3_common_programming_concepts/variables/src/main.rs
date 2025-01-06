@@ -23,6 +23,7 @@ fn main() {
 
     // shadowing can change the type of variable
     let spaces = "  ";
+    println!("Space {spaces} and {spaces} Space");
     let spaces = spaces.len();
     println!("Spaces: {spaces}");
 
